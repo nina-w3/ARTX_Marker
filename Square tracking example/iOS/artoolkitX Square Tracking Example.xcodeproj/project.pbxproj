@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4A05E0361FDC1B6F00C8B8B3 /* draw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4A05E0351FDC1B6F00C8B8B3 /* draw.cpp */; };
 		4A267D212058C437009B1032 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A267D202058C436009B1032 /* opencv2.framework */; };
 		4A70A0F51DC7F425005A4F69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A70A0F41DC7F425005A4F69 /* Assets.xcassets */; };
 		4A70A1021DC7F580005A4F69 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A70A0E51DC7F425005A4F69 /* main.m */; };
@@ -40,7 +39,6 @@
 
 /* Begin PBXFileReference section */
 		4842868312DC57B7A2817991 /* Pods-artoolkitX Square Tracking Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-artoolkitX Square Tracking Example.debug.xcconfig"; path = "Target Support Files/Pods-artoolkitX Square Tracking Example/Pods-artoolkitX Square Tracking Example.debug.xcconfig"; sourceTree = "<group>"; };
-		4A05E0351FDC1B6F00C8B8B3 /* draw.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = draw.cpp; path = ../draw.cpp; sourceTree = "<group>"; };
 		4A05E10E1FDC1D6000C8B8B3 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		4A267D202058C436009B1032 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../../../Source/depends/ios/Frameworks/opencv2.framework; sourceTree = "<group>"; };
 		4A70A0E11DC7F425005A4F69 /* artoolkitX Square Tracking Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "artoolkitX Square Tracking Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,7 +51,6 @@
 		4A70A0F91DC7F425005A4F69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A70A10B1DC7F773005A4F69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A70A10D1DC7F773005A4F69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4A70A1101DC7F963005A4F69 /* draw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = draw.h; path = ../draw.h; sourceTree = "<group>"; };
 		4A70A1171DC7FAA6005A4F69 /* ARX */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ARX; sourceTree = "<group>"; };
 		4A70A1191DC7FADC005A4F69 /* libARX.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libARX.a; sourceTree = "<group>"; };
 		4A70A11F1DC80645005A4F69 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = ../../../Source/depends/ios/lib/libcurl.a; sourceTree = "<group>"; };
@@ -71,10 +68,10 @@
 		72B16BEB0F9DE640D29DB185 /* Pods-artoolkitX Square Tracking Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-artoolkitX Square Tracking Example.release.xcconfig"; path = "Target Support Files/Pods-artoolkitX Square Tracking Example/Pods-artoolkitX Square Tracking Example.release.xcconfig"; sourceTree = "<group>"; };
 		CE3A1AEA26D4D86B00A92601 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CE3A1B0326D79E1300A92601 /* SoundManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SoundManager.h; sourceTree = "<group>"; };
-		CE3C18C226D8C22F00523B26 /* SoundManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SoundManager.cpp; sourceTree = "<group>"; };
+		CE3C18C226D8C22F00523B26 /* SoundManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = SoundManager.cpp; sourceTree = "<group>"; };
 		CE3CB25326DCFAA100AB8972 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		CE3CB25726DD0C9200AB8972 /* TTSManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TTSManager.h; path = ../TTSManager.h; sourceTree = "<group>"; };
-		CE3CB25826DD0CBE00AB8972 /* TTSManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = TTSManager.m; path = ../TTSManager.m; sourceTree = "<group>"; };
+		CE3CB25826DD0CBE00AB8972 /* TTSManager.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; name = TTSManager.m; path = ../TTSManager.m; sourceTree = "<group>"; };
 		CE3E6C7826CD39480010A7E2 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/IOKit.framework; sourceTree = DEVELOPER_DIR; };
 		CE3E6C7926CD39850010A7E2 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CoreAudio.framework; sourceTree = DEVELOPER_DIR; };
 		CEDC9E4A26A0109A004F45F8 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
@@ -139,11 +136,9 @@
 				4A70A0EE1DC7F425005A4F69 /* ARViewController.h */,
 				4A70A0EF1DC7F425005A4F69 /* ARViewController.mm */,
 				CE3A1B0326D79E1300A92601 /* SoundManager.h */,
-				4A70A1101DC7F963005A4F69 /* draw.h */,
 				CE3CB25726DD0C9200AB8972 /* TTSManager.h */,
 				CE3CB25826DD0CBE00AB8972 /* TTSManager.m */,
 				CE3C18C226D8C22F00523B26 /* SoundManager.cpp */,
-				4A05E0351FDC1B6F00C8B8B3 /* draw.cpp */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -382,7 +377,6 @@
 				4A70A1041DC7F580005A4F69 /* ARViewController.mm in Sources */,
 				4A70A1021DC7F580005A4F69 /* main.m in Sources */,
 				CE3CB25926DD0CBE00AB8972 /* TTSManager.m in Sources */,
-				4A05E0361FDC1B6F00C8B8B3 /* draw.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

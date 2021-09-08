@@ -23,9 +23,9 @@ extern "C" {
 #endif
 
 
-//int drawLoadModel(const char *path);
-//void drawSetModel(int modelIndex, bool visible, float pose[16]); // Notwendig warum?
-void tts2(void);
+int drawLoadModel(const char *path);
+void drawSetModel(int modelIndex, bool visible, float pose[16]); // Notwendig warum?
+void sound(void);
 
 #ifdef __cplusplus
 }

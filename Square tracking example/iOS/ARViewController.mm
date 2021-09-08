@@ -42,12 +42,9 @@
 
 #import <string>
 #import <ARX/ARController.h>
-#import "../draw.h"
 #import "../TTSManager.h"
 #import "SoundManager.h"
-
-
-//#import "SoundManager.h"
+#import <AVFoundation/AVFoundation.h>
 
 
 
@@ -295,59 +292,15 @@ static const int markerCount = (sizeof(markers)/sizeof(markers[0]));
             drawSetModel(markerModelIDs[i], marker->visible, view);
         }
         
-        draw();
-     //   tts1();
-       // sound();
+       
+       // tts();
+        sound();
         
-      //  AVSpeechUtterance *utterance = [AVSpeechUtterance speechUtteranceWithString:@"irgend ein ganz schlauer Text"];
-     //   [speechsynthesizer speakUtterance:utterance];
+     //   AVSpeechUtterance *utterance = [AVSpeechUtterance speechUtteranceWithString:@"irgend ein ganz schlauer Text"];
+     //  [speechsynthesizer speakUtterance:utterance];
     }
 }
 
 @end
- /*
-  generiertes Projekt:
-  //
-  //  ViewController.m
-  //  test_ObjectiveC
-  //
-  //  Created by user on 18.08.21.
-  //
-
-  #import "ViewController.h"
-
-  @interface ViewController ()
-
-  @end
-
-  @implementation ViewController
-
-  - (void)viewDidLoad {
-      [super viewDidLoad];
-      // Do any additional setup after loading the view.
-  }
 
 
-  @end
-
-  */
-
-/*
-#include <AVFoundation/AVFoundation.h>
-void tts1()
-{
-    
-    //TEXT TO SPEECH TTS
-    NSString *str = @"Hallo hier sollte eine Variable eingegeben sein, damit der gewünschte Text des jeweiligen Markers vorgelesen werden kann.";
-    
-    AVSpeechSynthesizer *synthesizer = [[AVSpeechSynthesizer alloc]init];
-    AVSpeechUtterance *utterance = [AVSpeechUtterance speechUtteranceWithString:@"Hallo Welt"];
-    [utterance setRate:0.5f];
-    [utterance setPostUtteranceDelay:1000000];
-    [synthesizer speakUtterance:utterance];
-utterance.voice = [AVSpeechSynthesisVoice voiceWithLanguage:@"de-DE"];
- 
-
-}
-
-*/

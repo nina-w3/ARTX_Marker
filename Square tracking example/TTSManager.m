@@ -6,29 +6,28 @@
 //  Copyright © 2021 artoolkit.org. All rights reserved.
 //
 
-//#import <Foundation/Foundation.h>
 #include "TTSManager.h"
+#include <AVFoundation/AVFoundation.h>
 
-//#include <AudioToolbox/AudioServices.h>
-//#include <AudioToolbox/AudioUnit.h>
-//#include <AVFoundation/AVFoundation.h>
-
-
+/// Gewuenscht ist nicht eine programmierte Sprachausgabe sondern via "VoiceOver"!
+/// Zudem wiederholt sich gerade hier mein synthesizer dauernd, bleibt dann haengen. Wenn nicht Voice Over nur mit guten Grund, dann muss hier etwas gemacht werden
+/// komischerweise war bei meiner testapp alles ok, einmal nur den gesamten Text ausgegeben. nicht mehr in meiner TestApp vorhanden.
 
 
 //@implementation TTSManager : NSObject
-void tts1()
+void tts()
 {
-    /*
-    //TEXT TO SPEECH TTS
-    NSString *str = @"Hallo hier sollte eine Variable eingegeben sein, damit der gewünschte Text des jeweiligen Markers vorgelesen werden kann.";
     
-  //  AVSpeechSynthesizer *speechSynthesizer = [[AVSpeechSynthesizer alloc]init];
-    AVSpeechUtterance *speechUtterance = [AVSpeechUtterance speechUtteranceWithString:str];
-    speechUtterance.volume =90.0f;
-    speechUtterance.rate = 0.50f;
-    speechUtterance.voice = [AVSpeechSynthesisVoice voiceWithLanguage:@"de-DE"];
+    //TEXT TO SPEECH TTS
+    NSString *str = @"Hi";
+    
+    AVSpeechSynthesizer *synthesizer = [[AVSpeechSynthesizer alloc]init];
+    AVSpeechUtterance *utterance = [AVSpeechUtterance speechUtteranceWithString:str];
+   // [utterance setRate:0.5f];
+   // [utterance setPostUtteranceDelay:1000000];
+    [synthesizer speakUtterance:utterance];
+utterance.voice = [AVSpeechSynthesisVoice voiceWithLanguage:@"de-DE"];
    
-*/
+
 }
 

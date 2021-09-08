@@ -10,7 +10,6 @@
 #define TTSManager_h
 
 
-
-void tts1(void);
+void tts(void);
 
 #endif /* TTSManager_h */
